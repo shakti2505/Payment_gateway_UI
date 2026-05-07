@@ -27,7 +27,7 @@ export default function CardPreview({ cardNumber, cardholderName, expiryDate, ca
             </div>
 
             <div className="relative z-10 space-y-4">
-                <div className="font-mono text-xl tracking-[0.15em] h-7">
+                <div className="font-mono text-xl max-sm:text-sm tracking-[0.15em] h-9">
                     {cardNumber || '•••• •••• •••• ••••'}
                 </div>
 

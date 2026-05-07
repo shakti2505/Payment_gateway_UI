@@ -120,8 +120,8 @@ export default function PaymentForm() {
         </div>
 
         {/* Amount and Currency */}
-        <div className="flex gap-4">
-          <div className="w-1/3 space-y-1">
+        <div className="grid grid-cols-2 gap-4">
+          <div className="space-y-1">
             <label htmlFor="currency" className="block text-sm font-medium text-gray-700">Currency</label>
             <select
               id="currency"
@@ -129,11 +129,11 @@ export default function PaymentForm() {
               value={values.currency}
               onChange={(e) => actions.setCurrency(e.target.value as any)}
             >
-              <option value="USD">USD ($)</option>
-              <option value="INR">INR (₹)</option>
+              <option value="USD"> $ (USD)</option>
+              <option value="INR">₹ (INR)</option>
             </select>
-          </div>
-          <div className="w-2/3 space-y-1">
+          </div>  
+          <div className="space-y-1">
             <label htmlFor="amount" className="block text-sm font-medium text-gray-700">Amount</label>
             <input
               id="amount"

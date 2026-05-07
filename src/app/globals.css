@@ -1,6 +1,17 @@
 @import "tailwindcss";
+/* 1. Hide spin buttons in Chrome, Safari, Edge, and Opera */
+input[type="number"]::-webkit-outer-spin-button,
+input[type="number"]::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
 
-/* Custom scrollbar for a polished feel (Optional) */
+/* 2. Hide spin buttons in Firefox */
+input[type="number"] {
+  -moz-appearance: textfield;
+  appearance: textfield;
+}
+
 ::-webkit-scrollbar {
   width: 8px;
 }
