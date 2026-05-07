@@ -32,13 +32,13 @@ export default function StatusScreen({ onRetry, onNewPayment }: { onRetry: () =>
       )}
 
       {status === 'Success' && (
-        <>
+        <div className="flex flex-col items-center justify-center">
           <CheckCircle2 className="w-16 h-16 text-emerald-500" />
           <h2 className="text-2xl font-bold text-gray-900">Payment Successful!</h2>
           <button onClick={onNewPayment} className="mt-4 px-6 py-2 bg-gray-900 text-white rounded-lg hover:bg-gray-800 transition-colors">
             Make Another Payment
           </button>
-        </>
+        </div>
       )}
 
       {(status === 'Failed' || status === 'Timeout') && (
