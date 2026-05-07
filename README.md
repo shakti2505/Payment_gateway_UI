@@ -1,4 +1,4 @@
-# PayGateway
+# Paygate
 
 This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
 
@@ -35,8 +35,8 @@ Framework: Next.js (App Router) was chosen for its robust server-side rendering 
 Styling: (Tailwind CSS is used for rapid, utility-first styling, ensuring a responsive and maintainable design system).
 
 
-State Management: ( Zustand was selected to handle global state as incomaprision to redux it does not have boilerplate and its easy to step and maintain)
+State Management: ( Zustand was selected to handle global state as it does not have boilerplate and its easy to setup and maintain)
 
 Component Strategy: Kept components small and separated by responsibility. Extracted complex logic into custom hooks to keep JSX clean and readable.
 
-Improvement: I would have add a in-memory rate limitor or simulated ip-check in route.ts, return 429 status code if a single ip hits the route more than 5 times in a minute to prevent the spams on /api/pay route
+Improvement: I would have add a in-memory rate limitor or simulated ip-check in route.ts, return 429 status code if a single ip hits the route more than 5 times in a minute to prevent the spams on /api/pay route.
