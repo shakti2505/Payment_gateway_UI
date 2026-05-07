@@ -1,4 +1,3 @@
-// src/app/api/pay/route.ts
 import { NextResponse } from 'next/server';
 import { PaymentPayload } from '../../../types/payment';
 
